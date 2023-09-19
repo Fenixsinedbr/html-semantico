@@ -19,9 +19,23 @@ p {
 }
 
 
-.paragrafo-de-artigo + .paragrafo-de-artigo{
-    padding-top: 0;
+.paragrafo-de-artigo ~p {
+    border-radius: 0;
 
+}
+
+.paragrafo-de-artigo:first-of-type{
+    border-radius: 20px 20px 0 0;
+}
+
+    paragrafo-de-artigo:last-of-type{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius:20px;
+
+}
+
+paragrafo-de-artigo:only-of-type{
+    border-radius: 20px 20px 0 0;
 }
 
 .titulo-de-pagina {
